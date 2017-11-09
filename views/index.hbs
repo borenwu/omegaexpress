@@ -5,225 +5,237 @@
 				<div class="portfolio-page">
 					<div class="portfolio-box">
 
-						<div class="project-post web-design illustration">
-							<img alt="" src="images/upload/image1.jpg">
-							<div class="hover-box">
-								<div class="project-title">
-									<h2>Vintage City</h2>
-									<span>development, mobile</span>
-									<div><a href="images/single-project.html"><i class="fa fa-arrow-right"></i></a></div>
-								</div>
-							</div>
-						</div>
+                        {{#each posts}}
+                            <div class="project-post {{tag}}">
+                                <img alt="" src={{thumb}}>
+                                <div class="hover-box">
+                                    <div class="project-title">
+                                        <h2>{{title}}</h2>
+                                        <span>更新于: {{dateString}}</span>
+                                        <div><a href="images/single-project.html"><i class="fa fa-arrow-right"></i></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        {{/each}}
+						<!--<div class="project-post web-design illustration">-->
+							<!--<img alt="" src="images/upload/pic_cnt_1.jpg">-->
+							<!--<div class="hover-box">-->
+								<!--<div class="project-title">-->
+									<!--<h2>Vintage City</h2>-->
+									<!--<span>development, mobile</span>-->
+									<!--<div><a href="images/single-project.html"><i class="fa fa-arrow-right"></i></a></div>-->
+								<!--</div>-->
+							<!--</div>-->
+						<!--</div>-->
 
-						<div class="project-post photography">
-							<img alt="" src="images/upload/image2.jpg">
-							<div class="hover-box">
-								<div class="project-title">
-									<h2>Little Bike</h2>
-									<span>development, mobile</span>
-									<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>
-								</div>
-							</div>
-						</div>
+						<!--<div class="project-post photography">-->
+							<!--<img alt="" src="images/upload/pic_cnt_24.jpg">-->
+							<!--<div class="hover-box">-->
+								<!--<div class="project-title">-->
+									<!--<h2>Little Bike</h2>-->
+									<!--<span>development, mobile</span>-->
+									<!--<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>-->
+								<!--</div>-->
+							<!--</div>-->
+						<!--</div>-->
 
-						<div class="project-post web-design logo">
-							<img alt="" src="images/upload/image3.jpg">
-							<div class="hover-box">
-								<div class="project-title">
-									<h2>Farmer Boy</h2>
-									<span>development, mobile</span>
-									<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>
-								</div>
-							</div>
-						</div>
+						<!--<div class="project-post web-design logo">-->
+							<!--<img alt="" src="images/upload/image3.jpg">-->
+							<!--<div class="hover-box">-->
+								<!--<div class="project-title">-->
+									<!--<h2>Farmer Boy</h2>-->
+									<!--<span>development, mobile</span>-->
+									<!--<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>-->
+								<!--</div>-->
+							<!--</div>-->
+						<!--</div>-->
 
-						<div class="project-post photography illustration">
-							<img alt="" src="images/upload/image4.jpg">
-							<div class="hover-box">
-								<div class="project-title">
-									<h2>Nature Wallpaper</h2>
-									<span>development, mobile</span>
-									<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>
-								</div>
-							</div>
-						</div>
+						<!--<div class="project-post photography illustration">-->
+							<!--<img alt="" src="images/upload/image4.jpg">-->
+							<!--<div class="hover-box">-->
+								<!--<div class="project-title">-->
+									<!--<h2>Nature Wallpaper</h2>-->
+									<!--<span>development, mobile</span>-->
+									<!--<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>-->
+								<!--</div>-->
+							<!--</div>-->
+						<!--</div>-->
 
-						<div class="project-post nature logo">
-							<img alt="" src="images/upload/image5.jpg">
-							<div class="hover-box">
-								<div class="project-title">
-									<h2>Some Books</h2>
-									<span>development, mobile</span>
-									<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>
-								</div>
-							</div>
-						</div>
+						<!--<div class="project-post nature logo">-->
+							<!--<img alt="" src="images/upload/image5.jpg">-->
+							<!--<div class="hover-box">-->
+								<!--<div class="project-title">-->
+									<!--<h2>Some Books</h2>-->
+									<!--<span>development, mobile</span>-->
+									<!--<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>-->
+								<!--</div>-->
+							<!--</div>-->
+						<!--</div>-->
 
-						<div class="project-post web-design illustration">
-							<img alt="" src="images/upload/image6.jpg">
-							<div class="hover-box">
-								<div class="project-title">
-									<h2>All Stuff in my Table</h2>
-									<span>development, mobile</span>
-									<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>
-								</div>
-							</div>
-						</div>
+						<!--<div class="project-post web-design illustration">-->
+							<!--<img alt="" src="images/upload/image6.jpg">-->
+							<!--<div class="hover-box">-->
+								<!--<div class="project-title">-->
+									<!--<h2>All Stuff in my Table</h2>-->
+									<!--<span>development, mobile</span>-->
+									<!--<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>-->
+								<!--</div>-->
+							<!--</div>-->
+						<!--</div>-->
 
-						<div class="project-post photography">
-							<img alt="" src="images/upload/image7.jpg">
-							<div class="hover-box">
-								<div class="project-title">
-									<h2>Rainy Day</h2>
-									<span>development, mobile</span>
-									<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>
-								</div>
-							</div>
-						</div>
+						<!--<div class="project-post photography">-->
+							<!--<img alt="" src="images/upload/image7.jpg">-->
+							<!--<div class="hover-box">-->
+								<!--<div class="project-title">-->
+									<!--<h2>Rainy Day</h2>-->
+									<!--<span>development, mobile</span>-->
+									<!--<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>-->
+								<!--</div>-->
+							<!--</div>-->
+						<!--</div>-->
 
-						<div class="project-post nature illustration">
-							<img alt="" src="images/upload/image8.jpg">
-							<div class="hover-box">
-								<div class="project-title">
-									<h2>Laptop waiting for me</h2>
-									<span>development, mobile</span>
-									<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>
-								</div>
-							</div>
-						</div>
+						<!--<div class="project-post nature illustration">-->
+							<!--<img alt="" src="images/upload/image8.jpg">-->
+							<!--<div class="hover-box">-->
+								<!--<div class="project-title">-->
+									<!--<h2>Laptop waiting for me</h2>-->
+									<!--<span>development, mobile</span>-->
+									<!--<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>-->
+								<!--</div>-->
+							<!--</div>-->
+						<!--</div>-->
 
-						<div class="project-post logo">
-							<img alt="" src="images/upload/image9.jpg">
-							<div class="hover-box">
-								<div class="project-title">
-									<h2>Grungy Bridge</h2>
-									<span>development, mobile</span>
-									<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>
-								</div>
-							</div>
-						</div>
+						<!--<div class="project-post logo">-->
+							<!--<img alt="" src="images/upload/image9.jpg">-->
+							<!--<div class="hover-box">-->
+								<!--<div class="project-title">-->
+									<!--<h2>Grungy Bridge</h2>-->
+									<!--<span>development, mobile</span>-->
+									<!--<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>-->
+								<!--</div>-->
+							<!--</div>-->
+						<!--</div>-->
 
-						<div class="project-post web-design nature">
-							<img alt="" src="images/upload/image10.jpg">
-							<div class="hover-box">
-								<div class="project-title">
-									<h2>Looking at the Towers</h2>
-									<span>development, mobile</span>
-									<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>
-								</div>
-							</div>
-						</div>
+						<!--<div class="project-post web-design nature">-->
+							<!--<img alt="" src="images/upload/image10.jpg">-->
+							<!--<div class="hover-box">-->
+								<!--<div class="project-title">-->
+									<!--<h2>Looking at the Towers</h2>-->
+									<!--<span>development, mobile</span>-->
+									<!--<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>-->
+								<!--</div>-->
+							<!--</div>-->
+						<!--</div>-->
 
-						<div class="project-post photography illustration">
-							<img alt="" src="images/upload/image11.jpg">
-							<div class="hover-box">
-								<div class="project-title">
-									<h2>Having Some Rest si bos</h2>
-									<span>development, mobile</span>
-									<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>
-								</div>
-							</div>
-						</div>
+						<!--<div class="project-post photography illustration">-->
+							<!--<img alt="" src="images/upload/image11.jpg">-->
+							<!--<div class="hover-box">-->
+								<!--<div class="project-title">-->
+									<!--<h2>Having Some Rest si bos</h2>-->
+									<!--<span>development, mobile</span>-->
+									<!--<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>-->
+								<!--</div>-->
+							<!--</div>-->
+						<!--</div>-->
 
-						<div class="project-post nature logo">
-							<img alt="" src="images/upload/image12.jpg">
-							<div class="hover-box">
-								<div class="project-title">
-									<h2>Hulaqa Photography</h2>
-									<span>development, mobile</span>
-									<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>
-								</div>
-							</div>
-						</div>
+						<!--<div class="project-post nature logo">-->
+							<!--<img alt="" src="images/upload/image12.jpg">-->
+							<!--<div class="hover-box">-->
+								<!--<div class="project-title">-->
+									<!--<h2>Hulaqa Photography</h2>-->
+									<!--<span>development, mobile</span>-->
+									<!--<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>-->
+								<!--</div>-->
+							<!--</div>-->
+						<!--</div>-->
 
-						<div class="project-post web-design illustration">
-							<img alt="" src="images/upload/image1.jpg">
-							<div class="hover-box">
-								<div class="project-title">
-									<h2>Lorem ipsum dolor</h2>
-									<span>development, mobile</span>
-									<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>
-								</div>
-							</div>
-						</div>
+						<!--<div class="project-post web-design illustration">-->
+							<!--<img alt="" src="images/upload/image1.jpg">-->
+							<!--<div class="hover-box">-->
+								<!--<div class="project-title">-->
+									<!--<h2>Lorem ipsum dolor</h2>-->
+									<!--<span>development, mobile</span>-->
+									<!--<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>-->
+								<!--</div>-->
+							<!--</div>-->
+						<!--</div>-->
 
-						<div class="project-post photography nature">
-							<img alt="" src="images/upload/image4.jpg">
-							<div class="hover-box">
-								<div class="project-title">
-									<h2>Lorem ipsum dolor</h2>
-									<span>development, mobile</span>
-									<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>
-								</div>
-							</div>
-						</div>
+						<!--<div class="project-post photography nature">-->
+							<!--<img alt="" src="images/upload/image4.jpg">-->
+							<!--<div class="hover-box">-->
+								<!--<div class="project-title">-->
+									<!--<h2>Lorem ipsum dolor</h2>-->
+									<!--<span>development, mobile</span>-->
+									<!--<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>-->
+								<!--</div>-->
+							<!--</div>-->
+						<!--</div>-->
 
-						<div class="project-post logo illustration">
-							<img alt="" src="images/upload/image5.jpg">
-							<div class="hover-box">
-								<div class="project-title">
-									<h2>Lorem ipsum dolor</h2>
-									<span>development, mobile</span>
-									<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>
-								</div>
-							</div>
-						</div>
+						<!--<div class="project-post logo illustration">-->
+							<!--<img alt="" src="images/upload/image5.jpg">-->
+							<!--<div class="hover-box">-->
+								<!--<div class="project-title">-->
+									<!--<h2>Lorem ipsum dolor</h2>-->
+									<!--<span>development, mobile</span>-->
+									<!--<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>-->
+								<!--</div>-->
+							<!--</div>-->
+						<!--</div>-->
 
-						<div class="project-post photography logo">
-							<img alt="" src="images/upload/image2.jpg">
-							<div class="hover-box">
-								<div class="project-title">
-									<h2>Lorem ipsum dolor</h2>
-									<span>development, mobile</span>
-									<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>
-								</div>
-							</div>
-						</div>
+						<!--<div class="project-post photography logo">-->
+							<!--<img alt="" src="images/upload/image2.jpg">-->
+							<!--<div class="hover-box">-->
+								<!--<div class="project-title">-->
+									<!--<h2>Lorem ipsum dolor</h2>-->
+									<!--<span>development, mobile</span>-->
+									<!--<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>-->
+								<!--</div>-->
+							<!--</div>-->
+						<!--</div>-->
 
-						<div class="project-post nature">
-							<img alt="" src="images/upload/image12.jpg">
-							<div class="hover-box">
-								<div class="project-title">
-									<h2>Lorem ipsum dolor</h2>
-									<span>development, mobile</span>
-									<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>
-								</div>
-							</div>
-						</div>
+						<!--<div class="project-post nature">-->
+							<!--<img alt="" src="images/upload/image12.jpg">-->
+							<!--<div class="hover-box">-->
+								<!--<div class="project-title">-->
+									<!--<h2>Lorem ipsum dolor</h2>-->
+									<!--<span>development, mobile</span>-->
+									<!--<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>-->
+								<!--</div>-->
+							<!--</div>-->
+						<!--</div>-->
 
-						<div class="project-post logo illustration">
-							<img alt="" src="images/upload/image9.jpg">
-							<div class="hover-box">
-								<div class="project-title">
-									<h2>Lorem ipsum dolor</h2>
-									<span>development, mobile</span>
-									<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>
-								</div>
-							</div>
-						</div>
+						<!--<div class="project-post logo illustration">-->
+							<!--<img alt="" src="images/upload/image9.jpg">-->
+							<!--<div class="hover-box">-->
+								<!--<div class="project-title">-->
+									<!--<h2>Lorem ipsum dolor</h2>-->
+									<!--<span>development, mobile</span>-->
+									<!--<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>-->
+								<!--</div>-->
+							<!--</div>-->
+						<!--</div>-->
 
-						<div class="project-post photography nature">
-							<img alt="" src="images/upload/image11.jpg">
-							<div class="hover-box">
-								<div class="project-title">
-									<h2>Lorem ipsum dolor</h2>
-									<span>development, mobile</span>
-									<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>
-								</div>
-							</div>
-						</div>
+						<!--<div class="project-post photography nature">-->
+							<!--<img alt="" src="images/upload/image11.jpg">-->
+							<!--<div class="hover-box">-->
+								<!--<div class="project-title">-->
+									<!--<h2>Lorem ipsum dolor</h2>-->
+									<!--<span>development, mobile</span>-->
+									<!--<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>-->
+								<!--</div>-->
+							<!--</div>-->
+						<!--</div>-->
 
-						<div class="project-post nature logo">
-							<img alt="" src="images/upload/image6.jpg">
-							<div class="hover-box">
-								<div class="project-title">
-									<h2>Lorem ipsum dolor</h2>
-									<span>development, mobile</span>
-									<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>
-								</div>
-							</div>
-						</div>
+						<!--<div class="project-post nature logo">-->
+							<!--<img alt="" src="images/upload/image6.jpg">-->
+							<!--<div class="hover-box">-->
+								<!--<div class="project-title">-->
+									<!--<h2>Lorem ipsum dolor</h2>-->
+									<!--<span>development, mobile</span>-->
+									<!--<div><a href="single-project.html"><i class="fa fa-arrow-right"></i></a></div>-->
+								<!--</div>-->
+							<!--</div>-->
+						<!--</div>-->
 
 					</div>
 				</div>

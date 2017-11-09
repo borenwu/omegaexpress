@@ -1,18 +1,24 @@
-var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
+const express = require('express');
+const path = require('path');
+const favicon = require('serve-favicon');
+const logger = require('morgan');
+const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
 const hbs = require('hbs');
+const mongoose = require('mongoose')
 
 hbs.registerPartials(__dirname + '/views/partials');
 
 
-var index = require('./routes/index');
-var users = require('./routes/users');
+const index = require('./routes/index');
+const users = require('./routes/users');
+const posts = require('./routes/posts')
 
-var app = express();
+
+const app = express();
+
+//setup mongodb
+mongoose.connect('mongodb://localhost/filetest')
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -28,10 +34,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
+app.use('/posts',posts);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  var err = new Error('Not Found');
+  let err = new Error('Not Found');
   err.status = 404;
   next(err);
 });

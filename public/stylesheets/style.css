@@ -1531,3 +1531,11 @@ ul.depth li:before {
     color:#1e9397;
 }
 
+.content-img{
+    padding-top: 3px;
+    width: 100%;
+}
+
+.donate-img{
+    width: 400px;
+}
