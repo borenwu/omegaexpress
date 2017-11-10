@@ -54,12 +54,23 @@ const client = qn.create({
 
 /* GET post index page. */
 router.get('/', function (req, res, next) {
-    res.render('posts/index');
+    res.render('error');
 });
 
-router.get('/admin', function (req, res, next) {
-    res.render('posts/admin')
-})
+/* GET post index page. */
+router.get('/:id', function (req, res, next) {
+    let id = req.params.id
+    Post.findOne({_id: id}, (err, post) => {
+        if (err) {
+            console.log(err);
+        }
+        // res.json(post.images)
+        res.render('posts/index', {postTitle: post.title, images: post.images});
+    });
+
+});
+
+
 
 
 /* POST a post */
@@ -87,7 +98,7 @@ router.post('/upload', upload.array('file'), function (req, res, next) {
                         let newPost = Post({
                             title: dirname,
                             date: moment(),
-                            tag:tag,
+                            tag: tag,
                             images: [store_url],
                             area: area
                         });
@@ -95,7 +106,7 @@ router.post('/upload', upload.array('file'), function (req, res, next) {
                             if (err) throw err;
                         });
                     }
-                    else{
+                    else {
                         post.images.push(store_url)
                         post.save(function (err) {
                             if (err) throw err;
@@ -109,7 +120,7 @@ router.post('/upload', upload.array('file'), function (req, res, next) {
 
     })
 
-    res.redirect('/posts/admin');
+    res.redirect('/admin');
     // res.json({mesage:'0'})
 })
 
